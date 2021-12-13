@@ -1,0 +1,146 @@
+#help_wrapper {
+    width: 990px; margin: 0 auto;
+}
+
+#help_wrapper .page_title {
+    color: #353940; font-size: 40px; font-weight: 700; line-height: 1.5; margin: 100px 0; text-align: center;
+}
+
+#help_wrapper .help_remote_wrap {
+    display: flex; margin-bottom: 20px;
+}
+
+#help_wrapper .help_remote_wrap .remote_btn {
+    color: #353940; font-size: 25px; font-weight: 700; line-height: 1.5; margin-right: 20px; padding: 9px 20px 10px; border-radius: 50px;
+}
+
+#help_wrapper .help_remote_wrap .remote_btn.on {
+    background-color: #0066FF; color: #FFF;
+}
+
+#help_wrapper .help_remote_wrap .remote_btn:last-child {
+    margin-right: 0;
+}
+
+#help_wrapper .contents_wrap .help_wrap {
+    display: none;
+}
+
+#help_wrapper .contents_wrap .help_wrap.on {
+    display: block;
+}
+
+
+@media screen and (max-width: 990px) {
+    #help_wrapper {
+        width: auto; margin: 0 20px;
+    }
+
+    #help_wrapper .page_title {
+        margin: 30px 0 50px; font-size: 28px;
+    }
+
+    #help_wrapper .help_remote_wrap .remote_btn {
+        font-size: 20px; padding: 5px 10px 6px; margin-right: 10px;
+    }
+
+    #help_wrapper .help_remote_wrap .remote_btn:last-child {
+        margin-right: 0;
+    }
+}
+
+/********** notice_wrap **********/
+#help_wrapper .contents_wrap .help_wrap[name="notice"] .notice_wrap {
+    margin-bottom: 50px;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="notice"] .notice_wrap .notice_row {
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E4E7E9; padding: 15px 0;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="notice"] .notice_wrap .notice_row .notice_title {
+    color: #353940; font-size: 18px; font-weight: 700; line-height: 1.5;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="notice"] .notice_wrap .notice_row .notice_date {
+    color: #878C8F; font-size: 16px; font-weight: 400; line-height: 1.5;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="notice"] .btn_wrap {
+    text-align: center;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="notice"] .btn_wrap .more_btn {
+    border: 1px solid #0066FF; color: #0066FF; font-size: 16px; font-weight: 700; line-height: 1.5; padding: 17px 102px; border-radius: 6px; transition: all 0.3s; -webkit-transition: all 0.3s; cursor: pointer;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="notice"] .btn_wrap .more_btn:hover {
+    background-color: #0066FF; color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 990px) {
+
+    #help_wrapper .contents_wrap .help_wrap[name="notice"] .notice_wrap .notice_row .notice_title {
+        font-size: 15px;
+    }
+    
+    #help_wrapper .contents_wrap .help_wrap[name="notice"] .notice_wrap .notice_row .notice_date {
+        font-size: 12px;
+    }
+    
+    #help_wrapper .contents_wrap .help_wrap[name="notice"] .btn_wrap .more_btn {
+        width: 100%; padding: 17px 0; font-size: 14px;
+    }
+}
+/********** notice_wrap END **********/
+
+
+/********** faq_wrap **********/
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row {
+    border-bottom: 1px solid #E4E7E9; padding: 15px 0 0; transition: all 0.3s; -webkit-transition: all 0.3s;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row.on {
+    border-bottom: 0;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .title_box {
+    display: flex; justify-content: space-between; align-items: center; padding-bottom: 15px; padding-right: 10px;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .title_box .faq_title {
+    color: #353940; font-size: 18px; font-weight: 700; line-height: 1.5; transition: all 0.3s; -webkit-transition: all 0.3s;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .title_box .faq_title.on {
+    color: #0066FF;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .title_box .arrow_btn > img {
+    width: 20px; transition: all 0.3s; -webkit-transition: all 0.3s;
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .title_box .arrow_btn.on > img {
+    transform: rotate(180deg); -webkit-transform: rotate(180deg);
+}
+
+#help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .contents_box {
+    display: none; background-color: #f5f5f5; border-radius: 10px; padding: 20px; color: #353940; font-size: 18px; font-weight: 400; line-height: 1.5; word-break: keep-all;
+}
+
+
+@media screen and (max-width: 990px) {
+    #help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .title_box .faq_title {
+        font-size: 15px;
+    }
+
+    #help_wrapper .contents_wrap .help_wrap[name="faq"] .faq_wrap .faq_row .contents_box {
+        font-size: 14px;
+    }
+}
+
+
+
+
+/********** faq_wrap END **********/

@@ -1,0 +1,8 @@
+#container {max-width:1045px; margin:0 auto; padding:79px 0;}
+#container .page_tit {color:#000; font-size:42px; font-weight:300; line-height:80px; text-align:center; margin-bottom:40px;}
+#container .page_txt {color:#808080; font-size:12px; line-height:28px;}
+
+#container .terms_table_wrap {display:table; width:100%; border:1px solid #000;}
+#container .terms_table_wrap .table_row {display:table-row;}
+#container .terms_table_wrap .table_row .table_td {display:table-cell; text-align:center; vertical-align:middle; border:1px solid #000;}
+#container .terms_table_wrap .table_row.header_row .table_td {background:#f2f4f6;}

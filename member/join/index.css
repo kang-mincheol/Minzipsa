@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+
+#container {
+    background-color:#DDE0E3; padding-top: 200px; padding-bottom: 200px;
+}
+
+@media screen and (max-width: 990px) {
+    #container {
+        padding-top: 110px; padding-bottom: 110px;
+    }
+}
+
+
+/********** join_wrap common **********/
+#join_wrap {
+    width: 520px; margin: 0 auto; background-color: #FFF; border-radius: 10px;
+}
+
+#join_wrap .join_wrap_title {
+    background-color: #0066FF; padding: 20px 0; margin-bottom: 40px; border-radius: 10px 10px 0 0;
+}
+
+#join_wrap .join_wrap_title .title_text {
+    color: #FFF; font-size: 20px; font-weight: 500; line-height: 1.5; text-align: center;
+}
+
+#join_wrap .join_step_wrap {
+    display: flex; justify-content: center;
+}
+
+#join_wrap .join_step_wrap .step_box {
+    position: relative; width: 44px; height: 44px; color: #FFF; font-size: 24px; font-weight: 700; line-height: 42px; text-align: center; background-color: #FFF; border-radius: 50px; margin-right: 30px; border: 1px solid #0066FF; color: #0066FF;
+}
+
+#join_wrap .join_step_wrap .step_box.on {
+    background-color: #0066FF; color: #FFF;
+}
+
+#join_wrap .join_step_wrap .step_box:last-child {
+    margin-right: 0;
+}
+
+#join_wrap .join_step_wrap .step_box::after {
+    content: ''; display: block; height: 2px; width: 32px; position: absolute; top: 50%; right: -32px; transform: translate(0, -50%); -webkit-transform: translate(0, -50%); background-color: #0066FF;
+}
+
+#join_wrap .join_step_wrap .step_box:last-child::after {
+    display: none;
+}
+
+
+@media screen and (max-width: 990px) {
+    #join_wrap {
+        width: auto; margin: 0 20px;
+    }
+
+    #join_wrap .join_wrap_title {
+        margin-bottom: 20px;
+    }
+}
+/********** join_wrap common END **********/
+
+
+/********** 회원가입 form **********/
+#join_wrap .join_form_wrap {
+    padding: 30px; border-radius: 0 0 10px 10px;
+}
+
+#join_wrap .join_form_wrap .join_form {
+    display: none;
+}
+
+#join_wrap .join_form_wrap .join_form.on {
+    display: block;
+}
+
+
+@media screen and (max-width: 990px) {
+    #join_wrap .join_form_wrap {
+        padding: 20px 15px;
+    }
+}
+/***** step_1 *****/
+#join_wrap .join_form_wrap .join_form[name="form_1"] .form_top_title {
+    color: #303030; font-size: 40px; font-weight: 300; line-height: 1.3; letter-spacing: -0.3px; text-align: center; margin-bottom: 30px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .form_top_title .hit {
+    font-weight: 500; color: #0066FF;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap {
+    margin-bottom: 20px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row {
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box {
+    display: flex; align-items: center;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box .check_box {
+    width: 20px; height: 20px; position: relative; margin-right: 10px; overflow: hidden; margin-top: 2px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box .check_box input[type="checkbox"] {
+    display: block; width: 100%; height: 100%; box-sizing: border-box; position: absolute; top: 0; left: 0; border: 0; outline: none; opacity: 0;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box .check_box input[type="checkbox"]:focus {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box .check_box input[type="checkbox"]:checked ~ .chk_box_bg {
+    background:url('/img/icon/checkbox_chk.png') 50% 50% no-repeat; background-size: 14px; background-color: #0066FF;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box .check_box .chk_box_bg {
+    display: block; width: 100%; height: 100%; background-color: #FFF; box-sizing: border-box; border: 1px solid #0066FF; border-radius: 4px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box label {
+    color: #303030; font-size: 14px; font-weight: 500; line-height: 1.5; letter-spacing: -0.3px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box label .notice_text {
+    color: #0066FF; font-size: 12px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .left_box label .info_text {
+    color: #666; font-size: 12px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .right_box .view_btn {
+    border: 1px solid #0066FF; color: #FFF; font-size: 12px; font-weight: 500; padding: 2px 10px; border-radius: 4px; background-color: #0066FF; transition: all 0.3s; -webkit-transition: all 0.3s;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .right_box .view_btn:hover,
+#join_wrap .join_form_wrap .join_form[name="form_1"] .terms_wrap .terms_row .right_box .view_btn:focus {
+    background-color: #FFF; color: #0066FF;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .step_btn_wrap {
+    display: flex; justify-content: space-between;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .step_btn_wrap button {
+    display: block; width: calc(50% - 10px); box-sizing: border-box; font-size: 16px; font-weight: 700; line-height: 1.5; padding: 10px 0; border-radius: 4px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .step_btn_wrap .cancel_btn {
+    border: 1px solid #0066FF; color: #0066FF; font-weight: 700;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_1"] .step_btn_wrap .step_btn {
+    background-color: #0066FF; color: #fff;
+}
+/***** step_1 END *****/
+
+
+/***** step_2 *****/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap {
+    margin-bottom: 20px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row {
+    margin-bottom: 10px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row:last-child {
+    margin-bottom: 0;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row label {
+    display: block; color: #303030; font-size: 14px; font-weight: 500; line-height: 1.5; margin-bottom: 5px; 
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row label .label_sub_text_blue {
+    color: #0066FF; font-size: 12px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row label .label_sub_text {
+    color: #666; font-size: 12px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row input {
+    display: block; width: 100%; box-sizing: border-box; color: #303030; font-size: 14px; font-weight: 400; line-height: 1.5; padding: 10px; border: 2px solid #ddd; border-radius: 4px; transition: all 0.3s; -webkit-transition: all 0.3s;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row input:focus {
+    border-color: #0066FF;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box {
+    display: flex;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box #user_birth_year {
+    margin-right: 20px; flex: 1;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box {
+    width: 100%; margin-right: 20px; flex: 1; position: relative;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box .select_btn {
+    display: block; width: 100%; color: #303030; font-size: 14px; font-weight: 400; line-height: 1.5; padding: 10px; border: 2px solid #ddd; border-radius: 4px; transition: all 0.3s; -webkit-transition: all 0.3s; text-align: left;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box .select_btn.on {
+    border-color: #0066FF;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box .select_wrap {
+    display: none; position: absolute; top: calc(100% - 2px); left: 0; width: 100%; border: 2px solid #ddd; border-radius: 4px; box-sizing: border-box; background-color: #fff;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box .select_wrap.on {
+    display: block;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box .select_wrap > button {
+    display: block; width: 100%; box-sizing: border-box; color: #303030; font-size: 14px; font-weight: 400; line-height: 1.5; padding: 5px 10px; text-align: left; border-bottom: 2px solid #ddd;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box .select_wrap > button:last-child {
+    border-bottom: 0;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box #user_birth_date {
+    flex: 1;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .input_box_2 {
+    display: flex;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .input_box_2 > input {
+    flex: 1; margin-right: 20px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .input_box_2 .search_btn {
+    flex: 1; border: 2px solid #0066FF; background-color: #0066FF; padding: 10px; color: #FFF; font-size: 14px; font-weight: 700; line-height: 1.5; border-radius: 4px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .btn_wrap {
+    display: flex;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .btn_wrap > button {
+    border-radius: 4px; display: block; width: calc(50% - 10px);
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .btn_wrap .prev_btn {
+    margin-right: 20px; color: #0066FF; font-size: 14px; font-weight: 500; border: 2px solid #0066FF; padding: 10px;
+}
+
+#join_wrap .join_form_wrap .join_form[name="form_2"] .btn_wrap .submit_btn {
+    background-color: #0066FF; color: #FFF; font-weight: 700;
+}
+
+@media screen and (max-width: 990px) {
+    #join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box #user_birth_year {
+        margin-right: 5px; flex: 0; width: 75px;
+    }
+
+    #join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box .custom_select_box {
+        margin-right: 5px;
+    }
+
+    #join_wrap .join_form_wrap .join_form[name="form_2"] .data_wrap .input_row .birth_box #user_birth_date {
+        flex: 0; width: 77px;
+    }
+}
+
+/***** daumPostCode *****/
+#postCodeWrap {
+    display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); width: 520px; border: 2px solid #0066FF; border-radius: 10px; box-sizing: border-box; overflow: hidden; background-color: #FFF; z-index: 101;
+}
+
+#postCodeWrap #btnFoldWrap {
+    cursor: pointer; width: 20px; height: 20px; position: absolute; right: 0; top: 0; z-index:1;
+}
+.post_search .placeholder.show {
+    white-space: pre;
+}
+
+@media screen and (max-width: 990px) {
+    #postCodeWrap {
+        width: calc(100% - 20px); position: absolute; top: 200px; transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0);
+    }
+}
+/***** daumPostCode END *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***** step_2 END *****/
+/********** 회원가입 form END **********/

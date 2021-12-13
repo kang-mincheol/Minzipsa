@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+#container {
+    padding-top: 0;
+}
+
+/********** contents_1 **********/
+#contents_1 {
+    height: 600px; background: url('/img/minzipsa/section_1_3.jpg') 50% 100% no-repeat; background-size: cover;
+}
+
+@media screen and (max-width: 990px) {
+    #contents_1 {
+        height: 400px;
+    }
+}
+/********** contents_1 END **********/
+
+/********** contents_2 **********/
+#contents_2 {
+    padding: 70px 0;
+}
+
+#contents_2 .section_wrap {
+    width: 970px; margin: 0 auto; display: flex; justify-content: space-between;
+}
+
+#contents_2 .section_wrap .left_box {
+    width: calc(100% - 250px);
+}
+
+#contents_2 .section_wrap .left_box .box_text {
+    color: #303030; font-size: 36px; font-weight: 500; line-height: 1.3; letter-spacing: -0.6px; word-break: keep-all;
+}
+
+#contents_2 .section_wrap .left_box .box_text .blue {
+    color: #0066FF; font-weight: 700;
+}
+
+#contents_2 .section_wrap .right_box {
+    width: 200px; border: 2px solid #ddd; border-radius: 10px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;
+}
+
+#contents_2 .section_wrap .right_box .logo_img {
+    display: block; width: calc(100% - 10px);
+}
+
+@media screen and (max-width: 990px) {
+    #contents_2 {
+        padding: 40px 30px;
+    }
+
+    #contents_2 .section_wrap {
+        width: auto; display: block;
+    }
+
+    #contents_2 .section_wrap .left_box {
+        width: auto; margin-bottom: 30px;
+    }
+
+    #contents_2 .section_wrap .left_box .box_text {
+        font-size: 30px;
+    }
+
+    #contents_2 .section_wrap .left_box .box_text .pc_enter {
+        display: none;
+    }
+
+    #contents_2 .section_wrap .right_box {
+        width: auto; border: 0;
+    }
+
+    #contents_2 .section_wrap .right_box .logo_img {
+        width: 200px;
+    }
+}
+/********** contents_2 END **********/
+
+
+
+
+
+
+
+

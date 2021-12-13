@@ -1,0 +1,262 @@
+#header {
+    width: 100%; position: fixed; top: 0; left: 0; z-index: 99; padding: 20px 0; background-image: linear-gradient(rgba(255,255,255, 1.0), rgba(255,255,255, 0.9), rgba(255,255,255, 0.2), rgba(255,255,255, 0));
+}
+
+#header .header_wrap {
+    display: flex; justify-content: space-between; align-items: center; width: calc(100% - 40px); height: 70px; padding: 0 20px; background-color: #1643c1; border-radius: 10px; box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.2); max-width: 1200px; margin: 0 auto; box-sizing: border-box;
+}
+
+/********** logo_wrap **********/
+#header .logo_wrap {
+    flex: 1;
+}
+
+
+/********** logo_wrap END **********/
+
+
+/********** menu_wrap **********/
+#header .menu_wrap {
+    flex: 3; display: flex; justify-content: center;
+}
+#header .menu_wrap .menu_btn {
+    color: #FFFFFF; font-size: 18px; font-weight: 500; line-height: 1.5; letter-spacing: -0.96px; margin-right: 14px; padding: 5px 18px 7px; transition: all 0.3s; -webkit-transition: all 0.3s; border-radius: 34px;
+}
+
+#header .menu_wrap .menu_btn:last-child {
+    margin-right: 0;
+}
+
+#header .menu_wrap .menu_btn.active,
+#header .menu_wrap .menu_btn:hover {
+    background-color: rgba(242, 244, 246, 0.2);
+}
+
+
+@media screen and (max-width: 990px) {
+    #header .menu_wrap {
+        display: none;
+    }
+}
+/********** menu_wrap END **********/
+
+
+/********** hamburger_wrap **********/
+#header .hamburger_wrap {
+    flex: 1; display: flex; justify-content: flex-end;
+}
+
+#header .hamburger_wrap .hamburger_btn {
+    color: #FFFFFF; font-size: 24px; cursor: pointer;
+}
+
+#header .hamburger_wrap .hamburger_btn > i {
+    font-size: 24px;
+}
+/********** hamburger_wrap END **********/
+
+
+/********** hidden_menu_wrap **********/
+#hidden_menu_wrap {
+    position: fixed; top: 20px; right: -500px; width: 320px; height: calc(100% - 40px); background-color: rgba(0, 0, 0, 0.8); border-radius: 10px; color: #FFFFFF; text-align: right; padding: 20px; box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.2); transition: all 0.5s; -webkit-transition: all 0.5s; overflow: auto; z-index: 100;
+}
+
+#hidden_menu_wrap.on {
+    right: 20px;
+}
+
+#hidden_menu_wrap .close_btn_wrap {
+    text-align: left; margin-bottom: 20px;
+}
+
+#hidden_menu_wrap .close_btn_wrap .close_btn {
+    cursor: pointer;
+}
+
+#hidden_menu_wrap .close_btn_wrap .close_btn img {
+    width: 30px;
+}
+
+#hidden_menu_wrap .user_info_wrap {
+    margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #FFFFFF;
+}
+
+#hidden_menu_wrap .user_info_wrap .info_btn_wrap {
+    margin-bottom: 10px;
+}
+
+#hidden_menu_wrap .user_info_wrap .info_btn_wrap:last-child {
+    margin-bottom: 0;
+}
+
+#hidden_menu_wrap .user_info_wrap .info_btn {
+    color: #FFFFFF; font-size: 18px; font-weight: 400; line-height: 1.5;
+}
+
+#hidden_menu_wrap .m_menu_list_wrap {
+    display: none; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #FFFFFF;
+}
+
+#hidden_menu_wrap .m_menu_list_wrap .m_menu_btn_wrap {
+    margin-bottom: 10px;
+}
+
+#hidden_menu_wrap .m_menu_list_wrap .m_menu_btn_wrap:last-child {
+    margin-bottom: 0;
+}
+
+#hidden_menu_wrap .m_menu_list_wrap .m_menu_btn_wrap .m_menu_btn {
+    color: #FFFFFF; font-size: 18px; font-weight: 400; line-height: 1.5;
+}
+
+#hidden_menu_wrap .cs_menu_wrap .cs_menu_btn {
+    color: #FFFFFF; font-size: 18px; font-weight: 400; line-height: 1.5; margin-bottom: 10px;
+}
+
+#hidden_menu_wrap .cs_menu_wrap .cs_menu_btn:last-child {
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 990px) {
+    #hidden_menu_wrap {
+        width: calc(100% - 40px); right: -120%; box-sizing: border-box;
+    }
+
+    #hidden_menu_wrap .m_menu_list_wrap {
+        display: block;
+    }
+}
+/********** hidden_menu_wrap END **********/
+
+/********** minzipsaAlertWrap **********/
+#minzipsaAlertWrap {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 100;
+}
+
+#minzipsaAlertWrap.on {
+    display: block;
+}
+
+#minzipsaAlertWrap .alert_box {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); width: 320px; border-radius: 10px; overflow: hidden; box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.2); background-color: #FFF;
+}
+
+#minzipsaAlertWrap .alert_box .title_box {
+    background-color: #0066FF; font-size: 16px; font-weight: 700; line-height: 1.5; padding: 10px 0; color: #FFF; text-align: center;
+}
+
+#minzipsaAlertWrap .alert_box .contents_box {
+    padding: 20px; background-color: #FFF;
+}
+
+#minzipsaAlertWrap .alert_box .contents_box .alert_text {
+    color: #303030; font-size: 14px; font-weight: 400; line-height: 1.5; text-align: center; margin-bottom: 20px; word-break: keep-all;
+}
+
+#minzipsaAlertWrap .alert_box .contents_box .confirm_btn {
+    display: block; width: 100%; color: #FFF; font-size: 16px; font-weight: 700; line-height: 1.5; padding: 8px 0; text-align: center; background-color: #0066FF; border-radius: 4px;
+}
+/********** minzipsaAlertWrap END **********/
+
+/********** minzipsaConfirmWrap **********/
+#minzipsaConfirmWrap {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 100;
+}
+
+#minzipsaConfirmWrap.on {
+    display: block;
+}
+
+#minzipsaConfirmWrap .alert_box {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); width: 320px; border-radius: 10px; overflow: hidden; box-shadow: 1px 7px 15px rgba(0, 0, 0, 0.2); background-color: #FFF;
+}
+
+#minzipsaConfirmWrap .alert_box .title_box {
+    background-color: #0066FF; font-size: 16px; font-weight: 700; line-height: 1.5; padding: 10px 0; color: #FFF; text-align: center;
+}
+
+#minzipsaConfirmWrap .alert_box .contents_box {
+    padding: 20px; background-color: #FFF;
+}
+
+#minzipsaConfirmWrap .alert_box .contents_box .confirm_text {
+    color: #303030; font-size: 14px; font-weight: 400; line-height: 1.5; text-align: center; margin-bottom: 20px; word-break: keep-all;
+}
+
+#minzipsaConfirmWrap .alert_box .contents_box .btn_wrap {
+    display: flex; justify-content: space-between;
+}
+
+#minzipsaConfirmWrap .alert_box .contents_box .confirm_btn {
+    display: block; width: calc(50% - 5px); color: #FFF; font-size: 16px; font-weight: 700; line-height: 1.5; padding: 8px 0; text-align: center; background-color: #0066FF; border-radius: 4px;
+}
+
+#minzipsaConfirmWrap .alert_box .contents_box .false_btn {
+    display: block; width: calc(50% - 5px); color: #303030; font-size: 16px; font-weight: 700; line-height: 1.5; padding: 8px 0; text-align: center; background-color: #FFF; border-radius: 4px; border: 2px solid #0066FF; box-sizing: border-box;
+}
+/********** minzipsaConfirmWrap END **********/
+
+/********** minzipsaLoginWrap **********/
+#minzipsaLoginWrap {
+    display: none;
+}
+
+#minzipsaLoginWrap.on {
+    display: block;
+}
+
+#minzipsaLoginWrap .contents_wrap {
+    width: 420px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); z-index: 100;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap {
+    background-color: #FFF; border-radius: 10px; overflow: hidden; box-shadow:1px 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .top_title_text {
+    color: #FFF; font-size: 20px; font-weight: 400; line-height: 1.5; text-align: center; padding: 20px 0; background-color: #0066FF; position:relative;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .top_title_text .close_btn {
+    display: block; width: 24px; height: 24px; position: absolute; top: 50%; right: 20px; transform: translate(0, -50%); -webkit-transform: translate(0, -50%); text-indent: -99999px; background: url('/img/icon/close@3x.png') 50% no-repeat; background-size: 24px;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box {
+    padding: 20px;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box .input_row {
+    margin-bottom: 15px;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box .input_row > label {
+    display: block; color: #303030; font-size: 16px; font-weight: 500; line-height: 1.5; margin-bottom: 5px;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box .input_row .custom_input {
+    display: block; width: 100%; box-sizing: border-box; border: 2px solid #0066FF; border-radius: 10px; padding: 10px; color: #303030; font-size: 16px; font-weight: 400; line-height: 1.5;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box .login_btn {
+    display: block; width: 100%; border-radius: 10px; background-color: #0066FF; color: #FFF; font-size: 16px; font-weight: 700; text-align: center; padding: 12px 0 13px; margin-bottom: 20px;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box .bottom_btn_wrap {
+    display: flex; justify-content: center; align-items: center;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box .bottom_btn_wrap .bottom_btn {
+    background-color: #0066FF; border: 2px solid #0066FF; border-radius: 5px; padding: 5px 10px; color: #FFF; font-size: 16px; font-weight: 500; line-height: 1.5;
+}
+
+#minzipsaLoginWrap .contents_wrap .login_info_wrap .login_box .bottom_btn_wrap .bottom_btn:first-child {
+    margin-right: 10px;
+}
+/********** minzipsaLoginWrap END **********/
+
+
+/********** common **********/
+
+
+/********** common END **********/

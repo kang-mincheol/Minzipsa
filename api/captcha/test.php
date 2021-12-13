@@ -1,0 +1,1 @@
+<img src="<?=BACK_URL?>api/captcha/random_image.php" >

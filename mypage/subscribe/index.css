@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+
+
+/********** common **********/
+#pageWrapper {
+    max-width: 1200px; margin: 0 auto; width: calc(100% - 40px);
+}
+
+.info_box {
+    margin: 0 auto; margin-bottom: 20px; padding: 20px; box-sizing: border-box; border: 2px solid #0066FF; border-radius: 10px;
+}
+
+.info_box: last-child {
+    margin-bottom: 0;
+}
+
+.info_box .title_wrap {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;
+}
+
+.info_box .title_wrap .box_title {
+    color: #0066FF; font-size: 20px; font-weight: 700; line-height: 1.5;
+}
+
+.info_box .title_wrap .more_btn {
+    display: block; color: #FFF; font-size: 14px; font-weight: 500; line-height: 1.5; text-align: center; padding: 5px 10px; background-color: #0066FF; border-radius: 5px;
+}
+/********** common END **********/
+
+
+/********** payment_info **********/
+#payment_info .box_contents_wrap .no_payments_box {
+    display: block; width: 320px; margin: 0 auto; border: 2px solid #0066FF; border-radius: 5px; box-sizing: border-box;
+}
+
+#payment_info .box_contents_wrap .no_payments_box .payments_add_btn {
+    display: block; padding: 10px; transition: all 0.5s; -webkit-transition: all 0.5s;
+}
+
+#payment_info .box_contents_wrap .no_payments_box .payments_add_btn:hover {
+    background-color: #0066FF;
+}
+
+#payment_info .box_contents_wrap .no_payments_box .payments_add_btn:hover .add_text {
+    color: #FFF;
+}
+
+#payment_info .box_contents_wrap .no_payments_box .plus_article {
+    width: 30px; height: 30px; margin: 0 auto; border-radius: 50%; background: url('/img/icon/plus_white_1.png') 50% no-repeat; background-size: 16px; background-color: #0066FF; margin-bottom: 10px;
+}
+
+#payment_info .box_contents_wrap .no_payments_box .add_text {
+    color: #303030; font-size: 18px; font-weight: 700; line-height: 1.2; text-align: center; transition: all 0.5s; -webkit-transition: all 0.5s;
+}
+
+/********** payment_info END **********/
+
+
+/********** subscribe_info **********/
+
+
+
+
+
+
+/********** subscribe_info END **********/

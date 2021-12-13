@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/********** reset CSS **********/
+body, div, p, a, ul, ol, li, input, button {
+    padding: 0; margin: 0;
+}
+
+div, ul, ol, li, a, p, span, input, button {
+    font-family:'Noto Sans KR', Dotum, Helvetica, AppleGothic, Sans-serif;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+a {
+    text-decoration:none; color:inherit;
+}
+
+button {
+    border: 0; background-color: unset; cursor: pointer;
+}
+
+button:focus, input:focus, a:focus {
+    outline: none;
+}
+
+#container {
+    position: relative; overflow: hidden; padding-top: 110px;
+}
+/********** reset CSS END **********/
+
+
+/********** block UI **********/
+.blockUI.blockMsg.blockPage {-webkit-transform:translate(-50%, -50%);}
+.blockUI.blockMsg.blockPage > img {display:block; width:100%;}
+
+/********** block UI END **********/

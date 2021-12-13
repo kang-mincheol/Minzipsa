@@ -1,0 +1,31 @@
+#container {
+    background-color:#DDE0E3; padding-top: 200px; padding-bottom: 200px;
+}
+
+#minzipsa_info .info_wrap {
+    max-width: 1020px; width: calc(100% - 40px); margin: 0 auto; border: 2px solid #0066ff; border-radius: 10px; padding: 20px; box-sizing: border-box; background-color: #FFF;
+}
+
+#minzipsa_info .info_wrap .step_wrap {
+    position: relative; display: none;
+}
+
+#minzipsa_info .info_wrap .step_wrap.on {
+    display: block;
+}
+
+#minzipsa_info .info_wrap .step_wrap .logo_wrap {
+    position: absolute; top: 0; right: 0;
+}
+
+#minzipsa_info .info_wrap .step_wrap .logo_wrap > img {
+    display: block; width: 140px;
+}
+
+#minzipsa_info .info_wrap .step_wrap .step_title_box .step_title_text {
+    text-align: left; color: #0066FF; font-size: 36px; font-weight: 500; line-height: 1.5;
+}
+
+#minzipsa_info .info_wrap .step_wrap .step_title_box .step_title_text .bold {
+    font-weight: 700;
+}
